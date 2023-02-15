@@ -17,7 +17,18 @@ $h3-70 : 7em;
 // 余白
 $h2-mtop : 14rem;
 
+*{
+    border: 1px solid gray;
+}
 
+main,header{
+    width:100%;
+}
+section{
+    width: $pc-width;
+    margin: 0 auto;
+    
+}
 
 
 

@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  border: 1px solid gray;
+}
+
+main, header {
+  width: 100%;
+}
+
+section {
+  width: 77%;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
