@@ -65,6 +65,14 @@ button{
     // }
 }
 
+h2 {
+    margin-top: $h2-mtop;
+    font-family: $font-fam;
+    font-size: $h2-72;
+    font-weight: $h2-fontw;
+    line-height: $h2-lineh;
+}
+
 // container　(フレックスボックス)
 .container{
     display: flex;
