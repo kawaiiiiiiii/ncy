@@ -36,11 +36,6 @@ button {
   display: flex;
   margin-top: 140px;
 }
-.container h2 {
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 87px;
-}
 .container p, .container button {
   font-size: 18px;
 }

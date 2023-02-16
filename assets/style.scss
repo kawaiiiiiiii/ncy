@@ -69,12 +69,6 @@ button{
 .container{
     display: flex;
     margin-top: $h2-mtop;
-
-    h2{
-        font-size: $h2-72;
-        font-weight: $h2-fontw;
-        line-height: $h2-lineh;
-    }
     p,button{
         font-size: $p-18;
     }
@@ -82,8 +76,6 @@ button{
         margin-top: $p-mtop;
 
     }
-   
-
 }
 h2.fs-64px{
     font-size: $h2-64;
