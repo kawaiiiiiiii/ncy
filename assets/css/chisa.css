@@ -19,18 +19,8 @@ section {
 }
 
 .s5 .contents {
-  color: #ffffff;
+  margin-bottom: 140px;
   text-align: center;
-}
-.s5 .contents h2 {
-  /* font-weight,height,letter-spacingも定数設定する？ */
-  margin-top: 140px;
-  /* chromeで確認:余白デカでか！ */
-  font-family: "inter";
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 87px;
-  letter-spacing: -0.02em;
 }
 .s5 .contents p {
   /* fontの定数設定追加する？ */
@@ -44,16 +34,6 @@ section {
 
 .s6 .contents {
   text-align: center;
-}
-.s6 .contents h2 {
-  /* font-weight,height,letter-spacingも定数設定する？ */
-  margin-top: 140px;
-  /* chromeで確認:余白デカでか！ */
-  font-family: "inter";
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 87px;
-  letter-spacing: -0.02em;
 }
 .s6 .contents .sponsors-icon {
   margin-top: 10rem;
@@ -77,14 +57,4 @@ section {
 .s9 {
   text-align: center;
   color: #ffffff;
-}
-.s9 h2 {
-  /* font-weight,height,letter-spacingも定数設定する？ */
-  margin-top: 140px;
-  /* chromeで確認:余白デカでか！ */
-  font-family: "inter";
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 87px;
-  letter-spacing: -0.02em;
 }/*# sourceMappingURL=chisa.css.map */
