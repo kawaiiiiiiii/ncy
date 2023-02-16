@@ -21,7 +21,7 @@ $h2-fontw : 700; //h2　fontweight
 
 $h2-lineh : 87px;//h2 line-height
 // 余白
-$h2-mtop : 140px; //h2のマージントップ
+$s-mtb : 0 140px; //h2のマージントップ
 $btm-mtop : 60px; //フレックスボックス内のボタンマージンTOP
 $p-mtop : 24px; //フレックスボックス内のｐタグマージンTOP
 
@@ -42,7 +42,7 @@ section{
 
 .section-wrap{
     width: $pc-width;
-    margin: 0 auto;   
+    margin: 140px auto; 
 }
 
 .bgc-navy{
@@ -57,16 +57,10 @@ button{
     background-color: $btn;
     border-radius: 6px;
     color: #ffffff;
-
-    // &::after{
-    //     content:url(../img/icon-vector.png);
-    //     color: #ffffff;
-        
-    // }
 }
 
 h2 {
-    margin-top: $h2-mtop;
+    // margin-top: $h2-mtop;
     font-family: $font-fam;
     font-size: $h2-72;
     font-weight: $h2-fontw;
@@ -76,7 +70,6 @@ h2 {
 // container　(フレックスボックス)
 .container{
     display: flex;
-    margin-top: $h2-mtop;
     p,button{
         font-size: $p-18;
     }
@@ -84,6 +77,13 @@ h2 {
         margin-top: $p-mtop;
 
     }
+}
+.s2{
+    .container .container-box,img{
+        width: 50%;
+
+    }
+
 }
 h2.fs-64px{
     font-size: $h2-64;
