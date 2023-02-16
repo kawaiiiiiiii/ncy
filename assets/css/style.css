@@ -17,6 +17,21 @@ section {
   margin: 0 auto;
 }
 
+.bgc-navy {
+  background-color: #043873;
+}
+.bgc-navy h2, .bgc-navy p, .bgc-navy nav {
+  color: #ffffff;
+}
+
+button {
+  margin-top: 60px;
+  padding: 20px 40px;
+  background-color: #4F9CF9;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
 .container {
   display: flex;
   margin-top: 140px;
@@ -31,13 +46,6 @@ section {
 }
 .container p {
   margin-top: 24px;
-}
-.container button {
-  margin-top: 60px;
-  padding: 20px 40px;
-  background-color: #4F9CF9;
-  border-radius: 6px;
-  color: #ffffff;
 }
 
 h2.fs-64px {
