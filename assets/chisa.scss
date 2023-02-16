@@ -19,7 +19,7 @@ $p-18 : 18px;
 
 $h2-fontw : 700; //h2　fontweight 
 
-$h2-lineh : 87px;//h2 line-height
+$h2-lineh : 87px; //h2 line-height
 // 余白
 $h2-mtop : 140px; //h2のマージントップ
 $btm-mtop : 60px; //フレックスボックス内のボタンマージンTOP
@@ -30,19 +30,20 @@ $p-mtop : 24px; //フレックスボックス内のｐタグマージンTOP
 * {
     border: 1px solid gray;
     box-sizing: border-box;
-    letter-spacing: -0.02em;//文字間のスペース
+    letter-spacing: -0.02em; //文字間のスペース
 }
 
-body{
+body {
     max-width: 1920px;
 }
-section{
-    width:100%;
+
+section {
+    width: 100%;
 }
 
-.section-wrap{
+.section-wrap {
     width: $pc-width;
-    margin: 0 auto;   
+    margin: 140px auto;
 }
 
 
@@ -95,22 +96,9 @@ section{
 
 // s5:Your work, everywhere you are
 .s5 {
-    // background-color: $bgc;
-
     .contents {
-        color: $text-w;
+        margin-bottom: 140px;
         text-align: center;
-
-        h2 {
-            /* font-weight,height,letter-spacingも定数設定する？ */
-            margin-top: $h2-mtop;
-            /* chromeで確認:余白デカでか！ */
-            font-family: $font-fam;
-            font-size: $h2-72;
-            font-weight: 700;
-            line-height: 87px;
-            letter-spacing: -0.02em;
-        }
 
         p {
             /* fontの定数設定追加する？ */
@@ -121,8 +109,6 @@ section{
             letter-spacing: -0.02em;
             margin-top: 2.4rem;
         }
-
-        // ここに.blue-btnの指定追加
     }
 }
 
@@ -134,16 +120,16 @@ section{
     .contents {
         text-align: center;
 
-        h2 {
-            /* font-weight,height,letter-spacingも定数設定する？ */
-            margin-top: $h2-mtop;
-            /* chromeで確認:余白デカでか！ */
-            font-family: $font-fam;
-            font-size: $h2-72;
-            font-weight: 700;
-            line-height: 87px;
-            letter-spacing: -0.02em;
-        }
+        // h2 {
+        //     /* font-weight,height,letter-spacingも定数設定する？ */
+        //     margin-top: $h2-mtop;
+        //     /* chromeで確認:余白デカでか！ */
+        //     font-family: $font-fam;
+        //     font-size: $h2-72;
+        //     font-weight: 700;
+        //     line-height: 87px;
+        //     letter-spacing: -0.02em;
+        // }
 
         .sponsors-icon {
             margin-top: 10rem;
@@ -180,16 +166,17 @@ section{
     text-align: center;
     color: $text-w;
 
-    h2 {
-        /* font-weight,height,letter-spacingも定数設定する？ */
-        margin-top: $h2-mtop;
-        /* chromeで確認:余白デカでか！ */
-        font-family: $font-fam;
-        font-size: $h2-72;
-        font-weight: 700;
-        line-height: 87px;
-        letter-spacing: -0.02em;
-    }
+    // h2 {
+    //     /* font-weight,height,letter-spacingも定数設定する？ */
+    //     margin-top: $h2-mtop;
+    //     /* chromeで確認:余白デカでか！ */
+    //     font-family: $font-fam;
+    //     font-size: $h2-72;
+    //     font-weight: 700;
+    //     line-height: 87px;
+    //     letter-spacing: -0.02em;
+    // }
+
     // pどした〜
     // blue-btnの指定
     // pどした〜part2.
