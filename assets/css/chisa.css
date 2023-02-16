@@ -19,17 +19,16 @@ section {
 }
 
 .s5 .contents {
-  margin-bottom: 140px;
   text-align: center;
 }
 .s5 .contents p {
   /* fontの定数設定追加する？ */
   font-family: "inter";
-  font-size: 1.8em;
+  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: -0.02em;
-  margin-top: 2.4rem;
+  margin-top: 24px;
 }
 
 .s6 .contents {
@@ -46,7 +45,7 @@ section {
 }
 .s8 h3 {
   /* font-weight,height,letter-spacingも定数設定する？ */
-  margin-top: 140px;
+  margin-top: 0 8.75rem;
   /* chromeで確認:余白デカでか！ */
   font-family: "inter";
   font-size: 70px;

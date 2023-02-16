@@ -12,18 +12,18 @@ $pc-width : 77%;
 $sp-width : 100%;
 // font
 $font-fam :"inter";
-$h2-72 : 72px;
-$h2-64 : 64px;
-$h3-70 : 70px;
-$p-18 : 18px;
+$h2-72 : 4.5rem;
+$h2-64 : 4re,;
+$h3-70 : 4.375rem;
+$p-18 : 1.125rem;
 
 $h2-fontw : 700; //h2　fontweight 
 
-$h2-lineh : 87px; //h2 line-height
+$h2-lineh : 5.437rem; //h2 line-height
 // 余白
-$h2-mtop : 140px; //h2のマージントップ
-$btm-mtop : 60px; //フレックスボックス内のボタンマージンTOP
-$p-mtop : 24px; //フレックスボックス内のｐタグマージンTOP
+$s-mtb : 0 8.75rem; //h2のマージントップ
+$btm-mtop : 3.75rem; //フレックスボックス内のボタンマージンTOP
+$p-mtop : 1.5rem; //フレックスボックス内のｐタグマージンTOP
 
 
 
@@ -96,19 +96,20 @@ section {
 // 🍙ちさぞーん
 
 // s5:Your work, everywhere you are
+// TO DO>>> bg-imgの追加とh2下の線
 .s5 {
+    // background-image: url(../img/s5_bgimg.png);
     .contents {
-        margin-bottom: 140px;
         text-align: center;
-
+        
         p {
             /* fontの定数設定追加する？ */
             font-family: $font-fam;
-            font-size: 1.8em;
+            font-size: 18px;
             font-weight: 400;
             line-height: 30px;
             letter-spacing: -0.02em;
-            margin-top: 2.4rem;
+            margin-top: 24px;
         }
     }
 }
