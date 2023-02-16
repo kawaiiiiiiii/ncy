@@ -27,15 +27,21 @@ $p-mtop : 24px; //フレックスボックス内のｐタグマージンTOP
 
 
 
-*{
+* {
     border: 1px solid gray;
     box-sizing: border-box;
     letter-spacing: 0.02em;
 }
 
-body{
+
+section {
+    width: $pc-width;
+    margin: 0 auto;
+}
+main,header{
     width:100%;
     max-width: 1920px;
+
 }
 
 .section-wrap{
@@ -134,15 +140,40 @@ h2.fs-64px{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "./chisa.scss";
-
-
-
-
-
-
-
-
-
-
-
