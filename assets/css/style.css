@@ -1,12 +1,89 @@
+@charset "UTF-8";
 * {
   border: 1px solid gray;
 }
 
-main, header {
+main,
+header {
   width: 100%;
 }
 
 section {
   width: 77%;
   margin: 0 auto;
+}
+
+.s5 {
+  background-color: #043873;
+}
+.s5 .contents {
+  color: #ffffff;
+  text-align: center;
+}
+.s5 .contents h2 {
+  /* font-weight,height,letter-spacingも定数設定する？ */
+  margin-top: 14rem;
+  /* chromeで確認:余白デカでか！ */
+  font-family: "inter";
+  font-size: 7.2em;
+  font-weight: 700;
+  line-height: 87px;
+  letter-spacing: -0.02em;
+}
+.s5 .contents p {
+  /* fontの定数設定追加する？ */
+  font-family: "inter";
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  margin-top: 2.4rem;
+}
+
+.s6 .contents {
+  text-align: center;
+}
+.s6 .contents h2 {
+  /* font-weight,height,letter-spacingも定数設定する？ */
+  margin-top: 14rem;
+  /* chromeで確認:余白デカでか！ */
+  font-family: "inter";
+  font-size: 7.2em;
+  font-weight: 700;
+  line-height: 87px;
+  letter-spacing: -0.02em;
+}
+.s6 .contents .sponsors-icon {
+  margin-top: 10rem;
+  margin-bottom: 14rem;
+  display: flex;
+}
+
+.s8 {
+  text-align: center;
+}
+.s8 h3 {
+  /* font-weight,height,letter-spacingも定数設定する？ */
+  margin-top: 14rem;
+  /* chromeで確認:余白デカでか！ */
+  font-family: "inter";
+  font-size: 7em;
+  font-weight: 700;
+  line-height: 87px;
+}
+
+.s9 {
+  background-color: #043873;
+  text-align: center;
+  color: #ffffff;
+}
+.s9 h2 {
+  /* font-weight,height,letter-spacingも定数設定する？ */
+  margin-top: 14rem;
+  /* chromeで確認:余白デカでか！ */
+  font-family: "inter";
+  font-size: 7.2em;
+  font-weight: 700;
+  line-height: 87px;
+  letter-spacing: -0.02em;
 }/*# sourceMappingURL=style.css.map */

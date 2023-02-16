@@ -17,4 +17,111 @@ $h3-70 : 7em;
 // 余白
 $h2-mtop : 14rem;
 
-// Your work, everywhere you are
+
+
+// 🍙ちさぞーん
+
+// s5:Your work, everywhere you are
+.s5 {
+    background-color: $bgc;
+
+    .contents {
+        color: $text-w;
+        text-align: center;
+
+        h2 {
+            /* font-weight,height,letter-spacingも定数設定する？ */
+            margin-top: $h2-mtop;
+            /* chromeで確認:余白デカでか！ */
+            font-family: $font-fam;
+            font-size: $h2-72;
+            font-weight: 700;
+            line-height: 87px;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            /* fontの定数設定追加する？ */
+            font-family: $font-fam;
+            font-size: 1.8em;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            margin-top: 2.4rem;
+        }
+
+        // ここに.blue-btnの指定追加
+    }
+}
+
+// section6:2つの塊があります
+.s6 {
+    // 100% your data ←flexかかる
+
+    // Our sponsors
+    .contents {
+        text-align: center;
+
+        h2 {
+            /* font-weight,height,letter-spacingも定数設定する？ */
+            margin-top: $h2-mtop;
+            /* chromeで確認:余白デカでか！ */
+            font-family: $font-fam;
+            font-size: $h2-72;
+            font-weight: 700;
+            line-height: 87px;
+            letter-spacing: -0.02em;
+        }
+
+        .sponsors-icon {
+            margin-top: 10rem;
+            margin-bottom: 14rem;
+            display: flex;
+            // justify-content: space-around; /* サイト幅確認した後に再度配置確認&設定 */
+        }
+    }
+}
+
+// s7:Work with Your Favorite Apps Using whitepace
+// フレックスかかる
+
+// s8:What Our Clients Says
+.s8 {
+    text-align: center;
+
+    h3 {
+        /* font-weight,height,letter-spacingも定数設定する？ */
+        margin-top: $h2-mtop;
+        /* chromeで確認:余白デカでか！ */
+        font-family: $font-fam;
+        font-size: $h3-70;
+        font-weight: 700;
+        line-height: 87px;
+    }
+
+    // ここにカード*3のスタイルかく
+}
+
+// s9:Try Whitepace today
+.s9 {
+    background-color: $bgc;
+    text-align: center;
+    color: $text-w;
+
+    h2 {
+        /* font-weight,height,letter-spacingも定数設定する？ */
+        margin-top: $h2-mtop;
+        /* chromeで確認:余白デカでか！ */
+        font-family: $font-fam;
+        font-size: $h2-72;
+        font-weight: 700;
+        line-height: 87px;
+        letter-spacing: -0.02em;
+    }
+    // pどした〜
+    // blue-btnの指定
+    // pどした〜part2.
+    // imgの指定
+}
+
+// フッター
