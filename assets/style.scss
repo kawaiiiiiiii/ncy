@@ -10,20 +10,20 @@ $btn : #4F9CF9;
 // コンテンツ幅
 $pc-width : 77%;
 $sp-width : 100%;
-// font
+// font 16でわるとrem
 $font-fam :"inter";
-$h2-72 : 72px;
-$h2-64 : 64px;
-$h3-70 : 70px;
-$p-18 : 18px;
+$h2-72 : 4.5rem;
+$h2-64 : 4rem;
+$h3-70 : 4.375rem;
+$p-18 : 1.125rem;
 
 $h2-fontw : 700; //h2　fontweight 
 
-$h2-lineh : 87px;//h2 line-height
+$h2-lineh : 5.437rem;//h2 line-height
 // 余白
-$s-mtb : 0 140px; //h2のマージントップ
-$btm-mtop : 60px; //フレックスボックス内のボタンマージンTOP
-$p-mtop : 24px; //フレックスボックス内のｐタグマージンTOP
+$s-mtb : 0 8.75rem; //h2のマージントップ
+$btm-mtop : 3.75rem; //フレックスボックス内のボタンマージンTOP
+$p-mtop : 1.5rem; //フレックスボックス内のｐタグマージンTOP
 
 
 
@@ -41,8 +41,8 @@ section{
 }
 
 .section-wrap{
+    margin: $s-mtb; 
     width: $pc-width;
-    margin: 140px auto; 
 }
 
 .bgc-navy{
@@ -64,7 +64,7 @@ h2 {
     font-family: $font-fam;
     font-size: $h2-72;
     font-weight: $h2-fontw;
-    line-height: $h2-lineh;
+    line-height: 5.4rem;
 }
 
 // container　(フレックスボックス)
@@ -87,6 +87,11 @@ h2 {
 }
 h2.fs-64px{
     font-size: $h2-64;
+}
+.s4{
+    h2{
+        font-size: 72px;
+    }
 }
 
 
