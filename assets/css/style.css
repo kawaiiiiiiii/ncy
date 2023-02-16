@@ -1,12 +1,42 @@
 * {
   border: 1px solid gray;
+  box-sizing: border-box;
+  letter-spacing: 0.02em;
 }
 
 main, header {
   width: 100%;
+  max-width: 1920px;
 }
 
-section {
+.section-wrap {
   width: 77%;
   margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  margin-top: 140px;
+}
+.container h2 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 87px;
+}
+.container p, .container button {
+  font-size: 18px;
+}
+.container p {
+  margin-top: 24px;
+}
+.container button {
+  margin-top: 60px;
+  padding: 20px 40px;
+  background-color: #4F9CF9;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+h2.fs-64px {
+  font-size: 64px;
 }/*# sourceMappingURL=style.css.map */
