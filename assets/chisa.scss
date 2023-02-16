@@ -12,14 +12,38 @@ $pc-width : 77%;
 $sp-width : 100%;
 // font
 $font-fam :"inter";
-$h2-72 : 7.2em;
-$h3-70 : 7em;
+$h2-72 : 72px;
+$h2-64 : 64px;
+$h3-70 : 70px;
+$p-18 : 18px;
+
+$h2-fontw : 700; //h2　fontweight 
+
+$h2-lineh : 87px;//h2 line-height
 // 余白
-$h2-mtop : 14rem;
+$h2-mtop : 140px; //h2のマージントップ
+$btm-mtop : 60px; //フレックスボックス内のボタンマージンTOP
+$p-mtop : 24px; //フレックスボックス内のｐタグマージンTOP
 
 
 
+* {
+    border: 1px solid gray;
+    box-sizing: border-box;
+    letter-spacing: -0.02em;//文字間のスペース
+}
 
+body{
+    max-width: 1920px;
+}
+section{
+    width:100%;
+}
+
+.section-wrap{
+    width: $pc-width;
+    margin: 0 auto;   
+}
 
 
 

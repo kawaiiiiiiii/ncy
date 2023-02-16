@@ -1,14 +1,33 @@
 @charset "UTF-8";
+* {
+  border: 1px solid gray;
+  box-sizing: border-box;
+  letter-spacing: -0.02em;
+}
+
+body {
+  max-width: 1920px;
+}
+
+section {
+  width: 100%;
+}
+
+.section-wrap {
+  width: 77%;
+  margin: 0 auto;
+}
+
 .s5 .contents {
   color: #ffffff;
   text-align: center;
 }
 .s5 .contents h2 {
   /* font-weight,height,letter-spacingも定数設定する？ */
-  margin-top: 14rem;
+  margin-top: 140px;
   /* chromeで確認:余白デカでか！ */
   font-family: "inter";
-  font-size: 7.2em;
+  font-size: 72px;
   font-weight: 700;
   line-height: 87px;
   letter-spacing: -0.02em;
@@ -28,10 +47,10 @@
 }
 .s6 .contents h2 {
   /* font-weight,height,letter-spacingも定数設定する？ */
-  margin-top: 14rem;
+  margin-top: 140px;
   /* chromeで確認:余白デカでか！ */
   font-family: "inter";
-  font-size: 7.2em;
+  font-size: 72px;
   font-weight: 700;
   line-height: 87px;
   letter-spacing: -0.02em;
@@ -47,10 +66,10 @@
 }
 .s8 h3 {
   /* font-weight,height,letter-spacingも定数設定する？ */
-  margin-top: 14rem;
+  margin-top: 140px;
   /* chromeで確認:余白デカでか！ */
   font-family: "inter";
-  font-size: 7em;
+  font-size: 70px;
   font-weight: 700;
   line-height: 87px;
 }
@@ -61,10 +80,10 @@
 }
 .s9 h2 {
   /* font-weight,height,letter-spacingも定数設定する？ */
-  margin-top: 14rem;
+  margin-top: 140px;
   /* chromeで確認:余白デカでか！ */
   font-family: "inter";
-  font-size: 7.2em;
+  font-size: 72px;
   font-weight: 700;
   line-height: 87px;
   letter-spacing: -0.02em;
