@@ -33,21 +33,10 @@ $p-mtop : 24px; //フレックスボックス内のｐタグマージンTOP
     letter-spacing: 0.02em;
 }
 
-<<<<<<< HEAD
-main,
-header {
-    width: 100%;
-}
 
-section {
-    width: $pc-width;
-    margin: 0 auto;
-
-=======
 main,header{
     width:100%;
     max-width: 1920px;
->>>>>>> 581a5382fca4a3a6e622fe61f78b05a43112aed0
 }
 
 .section-wrap{
