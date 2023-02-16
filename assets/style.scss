@@ -12,15 +12,28 @@ $pc-width : 77%;
 $sp-width : 100%;
 // font
 $font-fam :"inter";
-$h2-72 : 7.2em;
-$h3-70 : 7em;
+$h2-72 : 72px;
+$h2-64 : 64px;
+$h3-70 : 70px;
+$p-18 : 18px;
+
+$h2-fontw : 700; //h2　fontweight 
+
+$h2-lineh : 87px;//h2 line-height
 // 余白
-$h2-mtop : 14rem;
+$h2-mtop : 140px; //h2のマージントップ
+$btm-mtop : 60px; //フレックスボックス内のボタンマージンTOP
+$p-mtop : 24px; //フレックスボックス内のｐタグマージンTOP
+
+
 
 * {
     border: 1px solid gray;
+    box-sizing: border-box;
+    letter-spacing: 0.02em;
 }
 
+<<<<<<< HEAD
 main,
 header {
     width: 100%;
@@ -30,8 +43,52 @@ section {
     width: $pc-width;
     margin: 0 auto;
 
+=======
+main,header{
+    width:100%;
+    max-width: 1920px;
+>>>>>>> 581a5382fca4a3a6e622fe61f78b05a43112aed0
 }
 
+.section-wrap{
+    width: $pc-width;
+    margin: 0 auto;   
+}
+
+// container　(フレックスボックス)
+.container{
+    display: flex;
+    margin-top: $h2-mtop;
+
+    h2{
+        font-size: $h2-72;
+        font-weight: $h2-fontw;
+        line-height: $h2-lineh;
+    }
+    p,button{
+        font-size: $p-18;
+    }
+    p{
+        margin-top: $p-mtop;
+
+    }
+    button{
+        margin-top: $btm-mtop;
+        padding: 20px 40px;
+        background-color: $btn;
+        border-radius: 6px;
+        color: #ffffff;
+
+        // &::after{
+        //     content:url(../img/icon-vector.png);
+        //     color: #ffffff;
+        // }
+    }
+
+}
+h2.fs-64px{
+    font-size: $h2-64;
+}
 
 
 
