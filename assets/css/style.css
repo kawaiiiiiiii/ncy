@@ -2,12 +2,15 @@
 * {
   border: 1px solid gray;
   box-sizing: border-box;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
 }
 
-main, header {
-  width: 100%;
+body {
   max-width: 1920px;
+}
+
+section {
+  width: 100%;
 }
 
 .section-wrap {
