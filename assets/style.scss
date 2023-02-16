@@ -19,7 +19,7 @@ $p-18 : 1.125rem;
 
 $h2-fontw : 700; //h2　fontweight 
 
-$h2-lineh : 5.437rem;//h2 line-height
+$h2-lineh : 5.437rem; //h2 line-height
 // 余白
 $s-mtb : 0 8.75rem; //h2のマージントップ
 $btm-mtop : 3.75rem; //フレックスボックス内のボタンマージンTOP
@@ -30,35 +30,51 @@ $p-mtop : 1.5rem; //フレックスボックス内のｐタグマージンTOP
 * {
     border: 1px solid gray;
     box-sizing: border-box;
-    letter-spacing: -0.02em;//文字間のスペース
+    letter-spacing: -0.02em; //文字間のスペース
 }
 
-body{
+body {
     max-width: 1920px;
 }
-section{
-    width:100%;
+
+section {
+    width: 100%;
 }
 
-.section-wrap{
-    margin: $s-mtb; 
+.section-wrap {
+    margin: $s-mtb;
     width: $pc-width;
 }
 
-.bgc-navy{
+.bgc-navy {
     background-color: $bgc;
-    h2,p,nav{
+
+    h2,
+    p,
+    nav,
+    span {
         color: #ffffff;
     }
 }
-button{
+
+button {
     margin-top: $btm-mtop;
-    padding: 20px 40px;
+    padding: 1.333rem 2.5rem;
     background-color: $btn;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     color: #ffffff;
-    &:hover{
+    height: 3.75rem;
+        margin: 1rem auto;
+        display: flex;
+        align-items: center;
+        margin-left: 1.5rem;
+
+    &:hover {
         opacity: 0.7;
+    }
+
+    img {
+        margin-left: 0.625rem;
     }
 }
 
@@ -70,123 +86,123 @@ h2 {
     line-height: 5.4rem;
 }
 
+img {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+.vector {
+    width: 0.625rem;
+    height: 0.625rem;
+}
+
+// ヘッター部分
+header {
+    .section-wrap {
+        height: 5.75rem;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-left {
+            width: 11.937rem;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+
+            }
+        }
+
+        .header-rigth {
+            display: flex;
+            
+
+            ul {
+                height: 5.75rem;
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin-left: 2rem;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        img{
+                            width: auto;
+                            height: 1.5rem;
+                            margin-left: 0.625rem;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        
+        button {
+            margin: 1rem auto;
+            display: flex;
+            align-items: center;
+            margin-left: 1.5rem;
+        }
+        
+        .yellow-btn {
+            margin-left: 3.75rem;
+            background-color:#ffe492 ;
+            color: $text-b;
+        }
+    }
+}
+
 // container　(フレックスボックス)
-.container{
+
+.container {
     display: flex;
-    p,button{
+    justify-content: space-between;
+
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+
+    p,
+    button {
         font-size: $p-18;
     }
-    p{
+
+    p {
         margin-top: $p-mtop;
-
     }
 }
-.s2{
-    .container .container-box,img{
-        width: 50%;
-
+// セクション1
+.s1{
+    .container-box,h2{
+        width: 32.875rem;
     }
+    .s1-img{
+        width: 59.625rem;
+        height: auto;
+    }
+    // display: block;
+    // background-image: url(../img/bgimg-element.png);
+    // width: 100%;
+    // height: auto;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
 
 }
-h2.fs-64px{
+h2.fs-64px {
     font-size: $h2-64;
 }
-.s4{
-    h2{
+
+.s4 {
+    h2 {
         font-size: 72px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
