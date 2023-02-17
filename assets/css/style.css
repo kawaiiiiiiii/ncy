@@ -2,10 +2,12 @@
   border: 1px solid gray;
   box-sizing: border-box;
   letter-spacing: -0.02em;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   max-width: 1920px;
+  font-family: "Inter", sans-serif;
 }
 
 section {
