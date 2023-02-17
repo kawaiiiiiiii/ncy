@@ -15,14 +15,17 @@ $font-fam :"inter";
 $h2-72 : 4.5rem;
 $h2-64 : 4rem;
 $h3-70 : 4.375rem;
-$p-18 : 1.125rem;
+$h4-24 : 1.5rem;
+$p-18 : 1.125rem;//18px
 
 $h2-fontw : 700; //h2　fontweight 
+$h4-fontw : 600; 
 $p-fontw : 400;
 
 
 $h2-lineh : 5.437rem; //h2 line-height about87px
-$p-lineh : 1.875rem;
+$h4-lineh : 2.25rem; //h4 36px
+$p-lineh : 1.875rem;//
 
 // 余白
 $s-mtb : 8.75rem auto; //h2のマージントップ
@@ -88,6 +91,11 @@ h2 {
     font-size: $h2-72;
     font-weight: $h2-fontw;
     line-height: 5.4rem;
+}
+h4{
+    font-size: $h4-24;
+    font-weight:$h4-fontw ;
+    line-height: $h4-lineh;
 }
 
 p{
@@ -191,7 +199,7 @@ header {
     }
 }
 
-// セクション1
+// section1
 .s1 {
 
     .container-box{
@@ -217,6 +225,8 @@ header {
     // background-position: center;
 
 }
+
+// section2
 .s2{
 .section-wrap{
     margin-top: 4.25rem;
@@ -224,7 +234,7 @@ header {
 }
 
 
-
+// section4
 .s4 {
     margin: 0 auto;
     text-align: center;
@@ -239,15 +249,55 @@ header {
         .plan-box{
             width: 33%;
             padding: 2.75rem;
-            text-align: start
-        }
-        .content{
-            display: flex;
-            align-items: center;
+            text-align: start;
+            border: 1px solid #ffe492;
+            border-radius:10px ;
+            span{
+                font-size: 2.25rem;//36px
+                font-weight: 700;
+                line-height: 2.75rem;//44px
+                p{
+                    font-weight: 500;
+                    line-height: 1.437rem;//23px
+                }
+                div{
+                    font-weight: 400;
+                    font-size: 1rem;//16px
+                    line-height: 1.25rem;//20px
+                }
+                
+            }
+            button{
+                background-color: #ffffff;
+                border: 1px solid #ffe492;
+                color: #212529;
+            }
+            &.center{
+                h4,div,p{
+                    color: #ffffff;
+                }
+                span,img{
+                    color: #ffe492;
+                }
+                button{
+                    background-color: $btn;
+                    border: $btn solid 1px;
+                    color: #ffffff;
+                }
+                background-color: $bgc;
+                border-radius: 10px;
+            }
+            .content{
+                display: flex;
+                align-items: center;
+
+            }
             img{
-                width: 1.125rem;
+                width: 1.125rem;//18px
                 margin-right:1.125rem ;
             }
+        
+
         }
     }
 

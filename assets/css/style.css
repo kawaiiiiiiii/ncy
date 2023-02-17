@@ -53,6 +53,12 @@ h2 {
   line-height: 5.4rem;
 }
 
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
 p {
   font-size: 1.125rem;
   font-weight: 400;
@@ -165,12 +171,48 @@ header .section-wrap .yellow-btn {
   width: 33%;
   padding: 2.75rem;
   text-align: start;
+  border: 1px solid #ffe492;
+  border-radius: 10px;
 }
-.s4 .plan-container .content {
+.s4 .plan-container .plan-box span {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+.s4 .plan-container .plan-box span p {
+  font-weight: 500;
+  line-height: 1.437rem;
+}
+.s4 .plan-container .plan-box span div {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.s4 .plan-container .plan-box button {
+  background-color: #ffffff;
+  border: 1px solid #ffe492;
+  color: #212529;
+}
+.s4 .plan-container .plan-box.center {
+  background-color: #043873;
+  border-radius: 10px;
+}
+.s4 .plan-container .plan-box.center h4, .s4 .plan-container .plan-box.center div, .s4 .plan-container .plan-box.center p {
+  color: #ffffff;
+}
+.s4 .plan-container .plan-box.center span, .s4 .plan-container .plan-box.center img {
+  color: #ffe492;
+}
+.s4 .plan-container .plan-box.center button {
+  background-color: #4F9CF9;
+  border: #4F9CF9 solid 1px;
+  color: #ffffff;
+}
+.s4 .plan-container .plan-box .content {
   display: flex;
   align-items: center;
 }
-.s4 .plan-container .content img {
+.s4 .plan-container .plan-box img {
   width: 1.125rem;
   margin-right: 1.125rem;
 }/*# sourceMappingURL=style.css.map */
