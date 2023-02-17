@@ -18,8 +18,10 @@ $h3-70 : 4.375rem;
 $p-18 : 1.125rem;
 
 $h2-fontw : 700; //h2　fontweight 
+$p-fontw : 400;
 
 $h2-lineh : 5.437rem; //h2 line-height
+$p-lineh : 1.875rem;
 // 余白
 $s-mtb : 0 8.75rem; //h2のマージントップ
 $btm-mtop : 3.75rem; //フレックスボックス内のボタンマージンTOP
@@ -64,10 +66,10 @@ button {
     border-radius: 0.375rem;
     color: #ffffff;
     height: 3.75rem;
-        margin: 1rem auto;
-        display: flex;
-        align-items: center;
-        margin-left: 1.5rem;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
 
     &:hover {
         opacity: 0.7;
@@ -84,6 +86,12 @@ h2 {
     font-size: $h2-72;
     font-weight: $h2-fontw;
     line-height: 5.4rem;
+}
+
+p{
+    font-size: $p-18;
+    font-weight: $p-fontw;
+    line-height: $p-lineh;
 }
 
 img {
@@ -119,7 +127,7 @@ header {
 
         .header-rigth {
             display: flex;
-            
+
 
             ul {
                 height: 5.75rem;
@@ -133,7 +141,8 @@ header {
                         display: flex;
                         align-items: center;
                         text-align: center;
-                        img{
+
+                        img {
                             width: auto;
                             height: 1.5rem;
                             margin-left: 0.625rem;
@@ -144,17 +153,17 @@ header {
             }
         }
 
-        
+
         button {
             margin: 1rem auto;
             display: flex;
             align-items: center;
             margin-left: 1.5rem;
         }
-        
+
         .yellow-btn {
             margin-left: 3.75rem;
-            background-color:#ffe492 ;
+            background-color: #ffe492;
             color: $text-b;
         }
     }
@@ -164,7 +173,7 @@ header {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     &.reverse {
         flex-direction: row-reverse;
@@ -179,15 +188,24 @@ header {
         margin-top: $p-mtop;
     }
 }
+
 // セクション1
-.s1{
-    .container-box,h2{
+.s1 {
+
+    .container-box{
         width: 32.875rem;
+        // width: 100%;
+        h2 {
+            width: 32.875rem;
+            font-size: $h2-64;
+        }
     }
-    .s1-img{
+
+    .s1-img {
         width: 59.625rem;
         height: auto;
     }
+
     // display: block;
     // background-image: url(../img/bgimg-element.png);
     // width: 100%;
@@ -197,12 +215,39 @@ header {
     // background-position: center;
 
 }
-h2.fs-64px {
-    font-size: $h2-64;
+.s2{
+.section-wrap{
+    margin-top: 4.25rem;
+}
 }
 
+
+
 .s4 {
-    h2 {
-        font-size: 72px;
+    margin: 0 auto;
+    text-align: center;
+    .plan-h2-p{
+        width: 66.1%;
+        text-align: center;
+        margin: 0 auto;
     }
+    .plan-container{
+        display: flex;
+        justify-content: space-between;
+        .plan-box{
+            width: 33%;
+            padding: 2.75rem;
+            text-align: start
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            img{
+                width: 1.125rem;
+                margin-right:1.125rem ;
+            }
+        }
+    }
+
+   
 }
