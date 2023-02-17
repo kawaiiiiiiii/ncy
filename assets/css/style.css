@@ -37,7 +37,7 @@ button {
   margin: 1rem auto;
   display: flex;
   align-items: center;
-  margin-left: 1.5rem;
+  margin-left: 0;
 }
 button:hover {
   opacity: 0.7;
@@ -51,6 +51,12 @@ h2 {
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 5.4rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
 }
 
 img {
@@ -114,7 +120,6 @@ header .section-wrap .yellow-btn {
 
 .container {
   display: flex;
-  justify-content: space-between;
 }
 .container.reverse {
   flex-direction: row-reverse;
@@ -127,18 +132,45 @@ header .section-wrap .yellow-btn {
   margin-top: 1.5rem;
 }
 
-.s1 .container-box, .s1 h2 {
+.s1 .container-box {
   width: 32.875rem;
+}
+.s1 .container-box h2 {
+  width: 32.875rem;
+  font-size: 4rem;
 }
 .s1 .s1-img {
   width: 59.625rem;
   height: auto;
 }
 
-h2.fs-64px {
-  font-size: 4rem;
+.s2 .section-wrap {
+  margin-top: 4.25rem;
 }
 
-.s4 h2 {
-  font-size: 72px;
+.s4 {
+  margin: 0 auto;
+  text-align: center;
+}
+.s4 .plan-h2-p {
+  width: 66.1%;
+  text-align: center;
+  margin: 0 auto;
+}
+.s4 .plan-container {
+  display: flex;
+  justify-content: space-between;
+}
+.s4 .plan-container .plan-box {
+  width: 33%;
+  padding: 2.75rem;
+  text-align: start;
+}
+.s4 .plan-container .content {
+  display: flex;
+  align-items: center;
+}
+.s4 .plan-container .content img {
+  width: 1.125rem;
+  margin-right: 1.125rem;
 }/*# sourceMappingURL=style.css.map */
