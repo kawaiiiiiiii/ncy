@@ -41,10 +41,6 @@ section {
     width: 100%;
 }
 
-.section-wrap {
-    width: $pc-width;
-    margin: 140px auto;  
-}
 
 
 
@@ -105,11 +101,10 @@ section {
         p {
             /* fontの定数設定追加する？ */
             font-family: $font-fam;
-            font-size: 18px;
+            font-size: 1.125rem;/* 18px */
             font-weight: 400;
-            line-height: 30px;
-            letter-spacing: -0.02em;
-            margin-top: 24px;
+            line-height: 1.875rem;/* 30px */
+            margin-top: 1.5rem;/* 24px */
         }
     }
 }
@@ -117,21 +112,27 @@ section {
 // section6:2つの塊があります
 .s6 {
     // 100% your data ←flexかかる
-
+    .container{
+        margin-bottom: 8.75rem;/* 140px */
+        .container-box{
+            width: 50%;
+            p{
+                font-family: $font-fam;
+                font-weight: 400;
+                font-size: $p-18;
+                line-height: 1.875rem;/* 30px */
+            }
+        }
+        img{/* 要確認:画像サイズ指定 */
+            width: 50%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
     // Our sponsors
     .contents {
         text-align: center;
-
-        // h2 {
-        //     /* font-weight,height,letter-spacingも定数設定する？ */
-        //     margin-top: $h2-mtop;
-        //     /* chromeで確認:余白デカでか！ */
-        //     font-family: $font-fam;
-        //     font-size: $h2-72;
-        //     font-weight: 700;
-        //     line-height: 87px;
-        //     letter-spacing: -0.02em;
-        // }
+        margin-top: 8.75rem;/* 140px */
 
         .sponsors-icon {
             margin-top: 10rem;
@@ -150,13 +151,10 @@ section {
     text-align: center;
 
     h3 {
-        /* font-weight,height,letter-spacingも定数設定する？ */
-        margin-top: $h2-mtop;
-        /* chromeで確認:余白デカでか！ */
         font-family: $font-fam;
         font-size: $h3-70;
         font-weight: 700;
-        line-height: 87px;
+        line-height: $h2-lineh;
     }
 
     // ここにカード*3のスタイルかく

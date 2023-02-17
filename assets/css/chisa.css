@@ -13,26 +13,38 @@ section {
   width: 100%;
 }
 
-.section-wrap {
-  width: 77%;
-  margin: 140px auto;
-}
-
 .s5 .contents {
   text-align: center;
 }
 .s5 .contents p {
   /* fontの定数設定追加する？ */
   font-family: "inter";
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   font-weight: 400;
-  line-height: 30px;
-  letter-spacing: -0.02em;
-  margin-top: 24px;
+  line-height: 1.875rem; /* 30px */
+  margin-top: 1.5rem; /* 24px */
 }
 
+.s6 .container {
+  margin-bottom: 8.75rem; /* 140px */
+}
+.s6 .container .container-box {
+  width: 50%;
+}
+.s6 .container .container-box p {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem; /* 30px */
+}
+.s6 .container img { /* 要確認:画像サイズ指定 */
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}
 .s6 .contents {
   text-align: center;
+  margin-top: 8.75rem; /* 140px */
 }
 .s6 .contents .sponsors-icon {
   margin-top: 10rem;
@@ -44,13 +56,10 @@ section {
   text-align: center;
 }
 .s8 h3 {
-  /* font-weight,height,letter-spacingも定数設定する？ */
-  margin-top: 0 8.75rem;
-  /* chromeで確認:余白デカでか！ */
   font-family: "inter";
-  font-size: 70px;
+  font-size: 4.375rem;
   font-weight: 700;
-  line-height: 87px;
+  line-height: 5.437rem;
 }
 
 .s9 {
