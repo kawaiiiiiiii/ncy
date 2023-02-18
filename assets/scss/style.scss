@@ -257,11 +257,14 @@ header {
     // background-repeat:no-repeat ;
     // background-position:50% 50%;
     span{
-        &::before{
-        content: url(../img/s2_udline.png);
-        position: absolute;
-        vertical-align: middle;
-        top: 0;
+        background-image: url(../../img/s2_udline.png);
+        
+        // &::before{
+            
+        // // content: url(../img/s2_udline.png);
+        // // position: absolute;
+        // vertical-align: middle;
+        // top: 0;
     }
     }
     .bgimg-s2{
@@ -278,7 +281,7 @@ header {
     .section-wrap {
         margin-top: 4.25rem;
     }
-}
+
 
 
 // section4

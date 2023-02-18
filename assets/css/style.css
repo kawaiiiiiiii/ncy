@@ -165,19 +165,19 @@ header .section-wrap .yellow-btn {
 .s2 {
   position: relative;
 }
-.s2 span::before {
-  background-image: url(../img/s2_udline.png);
-  vertical-align: middle;
-  top: 0;
+.s2 span {
+  background-image: url(../../img/s2_udline.png);
 }
-.s2 .bgimg-s2 {
+
+.bgimg-s2 {
   position: absolute;
   top: 11.85%;
   display: block;
   width: 602.84px;
   height: 448.52px;
 }
-.s2 .section-wrap {
+
+.section-wrap {
   margin-top: 4.25rem;
 }
 
