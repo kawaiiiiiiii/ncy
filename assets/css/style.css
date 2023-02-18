@@ -162,6 +162,16 @@ header .section-wrap .yellow-btn {
   height: auto;
 }
 
+.s2 {
+  position: relative;
+}
+.s2 .bgimg-s2 {
+  position: absolute;
+  top: 11.85%;
+  display: block;
+  width: 602.84px;
+  height: 448.52px;
+}
 .s2 .section-wrap {
   margin-top: 4.25rem;
 }
@@ -178,18 +188,22 @@ header .section-wrap .yellow-btn {
 .s4 .plan-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .s4 .plan-container .plan-box {
-  width: 33%;
-  padding: 2.75rem;
+  width: 31.9%;
+  height: 62%;
+  padding: 40px 2.75rem;
   text-align: start;
   border: 1px solid #ffe492;
   border-radius: 10px;
 }
 .s4 .plan-container .plan-box span {
+  display: block;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 2.75rem;
+  margin: 25px 0;
 }
 .s4 .plan-container .plan-box span p {
   font-weight: 500;
@@ -204,29 +218,47 @@ header .section-wrap .yellow-btn {
   background-color: #ffffff;
   border: 1px solid #ffe492;
   color: #212529;
+  margin: 25px 0 40px;
 }
 .s4 .plan-container .plan-box.center {
+  padding: 0 2.75rem;
+  height: 100%;
+  margin-top: 0;
   background-color: #043873;
   border-radius: 10px;
 }
-.s4 .plan-container .plan-box.center h4, .s4 .plan-container .plan-box.center div, .s4 .plan-container .plan-box.center p {
+.s4 .plan-container .plan-box.center h4 {
+  margin-top: 80px;
+}
+.s4 .plan-container .plan-box.center h4,
+.s4 .plan-container .plan-box.center div,
+.s4 .plan-container .plan-box.center p {
   color: #ffffff;
 }
-.s4 .plan-container .plan-box.center span, .s4 .plan-container .plan-box.center img {
+.s4 .plan-container .plan-box.center span,
+.s4 .plan-container .plan-box.center img {
   color: #ffe492;
 }
 .s4 .plan-container .plan-box.center button {
   background-color: #4F9CF9;
   border: #4F9CF9 solid 1px;
   color: #ffffff;
+  margin-bottom: 80px;
 }
 .s4 .plan-container .plan-box .content {
   display: flex;
   align-items: center;
+  margin-bottom: 28px;
+}
+.s4 .plan-container .plan-box .content-last {
+  margin-bottom: 0;
 }
 .s4 .plan-container .plan-box img {
   width: 1.125rem;
   margin-right: 1.125rem;
+}
+.s4 .plan-container .plan-box p {
+  margin-bottom: 25px;
 }
 
 .atsuko {
