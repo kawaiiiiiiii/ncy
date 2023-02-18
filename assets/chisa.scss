@@ -22,13 +22,13 @@ $p-18 : 1.125rem;
 $f-16 : 1rem;
 
 $h2-fontw : 700; //h2　fontweight 
-$h4-fontw : 600; 
+$h4-fontw : 600;
 $p-fontw : 400;
 
 
 $h2-lineh : 5.437rem; //h2 line-height about87px
 $h4-lineh : 2.25rem; //h4 36px
-$p-lineh : 1.875rem;//
+$p-lineh : 1.875rem; //
 
 // 余白
 $s-mtb : 8.75rem auto; //h2のマージントップ
@@ -329,6 +329,8 @@ section {
             /* 30px */
             margin-top: 1.5rem;
             /* 24px */
+            width: 71.8%;
+            margin: 1.5rem auto 0;
         }
     }
 }
@@ -343,7 +345,7 @@ section {
 
         /* 140px */
         .container-box {
-            width: 50%;
+
 
             p {
                 font-family: $font-fam;
@@ -351,12 +353,11 @@ section {
                 font-size: $p-18;
                 line-height: 1.875rem;
                 /* 30px */
+
             }
         }
-
-        img {
-            /* 要確認:画像サイズ指定 */
-            width: 50%;
+        #s6-img{
+            width: 46%;
             height: auto;
             object-fit: contain;
         }
@@ -399,6 +400,7 @@ section {
             }
         }
     }
+
 }
 
 // s7:Work with Your Favorite Apps Using whitepace
@@ -441,6 +443,7 @@ section {
     }
 
     // ここにカード*3のスタイルかく
+
 }
 
 // s9:Try Whitepace today
@@ -472,19 +475,19 @@ section {
 
             /* 40px */
             #s9-apple {
-                width: 3.75rem;
+                width: 3.3%;
                 /* 60px */
                 height: auto;
             }
 
             #s9-microsoft {
-                width: 3.75rem;
+                width: 3.3%;
                 /* 60px */
                 height: auto;
             }
 
             #s9-android {
-                width: 3.75rem;
+                width: 3.3%;
                 /* 60px */
                 height: auto;
             }
