@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   border: 1px solid gray;
   box-sizing: border-box;
@@ -14,6 +15,9 @@ section {
   width: 100%;
 }
 
+.s5 {
+  position: relative;
+}
 .s5 .contents {
   text-align: center;
 }
@@ -26,8 +30,12 @@ section {
   /* 30px */
   margin-top: 1.5rem;
   /* 24px */
-  width: 71.8%;
+  width: 97%;
+  /* サイズ通りなら71.8% */
   margin: 1.5rem auto 0;
+}
+.s5 img {
+  position: absolute;
 }
 
 .s6 .container {
@@ -100,6 +108,79 @@ section {
   font-size: 4.375rem;
   font-weight: 700;
   line-height: 5.437rem;
+}
+.s8 .card {
+  width: 29.479rem;
+  /* 471.67px */
+  height: 31.153rem;
+  /* 498.46px */
+  background-color: #ffffff;
+  /* 後で各々変更 */
+  border: solid 1px red;
+  /* 完成後コメントアウト */
+}
+.s8 .card-box {
+  display: flex;
+}
+.s8 .card-box .card {
+  background-color: #ffffff;
+  padding: 60px 40px;
+}
+.s8 .card-box .card .quote img {
+  width: 86px;
+  height: 61.46px;
+}
+.s8 .card-box .card p {
+  font-family: "inter";
+  font-size: 1.125rem;
+  /* 18px */
+  font-weight: 400;
+  line-height: 1.875rem;
+  /* 30px */
+  margin-top: 2rem;
+  /* 32px */
+  margin-bottom: 2.5rem;
+  /* 40px */
+  text-align: start;
+  width: 24.479rem;
+  /* 391.67px */
+  height: auto;
+}
+.s8 .card-box .card .content {
+  display: flex;
+}
+.s8 .card-box .card .content img {
+  width: 5.6975rem;
+  /* 95px */
+  height: 5.6975rem;
+  margin-right: 2.625rem;
+  /* 42px */
+}
+.s8 .card-box .card .content .avater-info {
+  width: 9.4615rem;
+  /* 246px */
+  height: auto;
+}
+.s8 .card-box .card .content .avater-info h4 {
+  font-family: "inter";
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  /* 36px */
+  color: #212529;
+}
+.s8 .card-box .card .content .avater-info p {
+  font-family: "inter";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  /* 20px */
+  margin-top: 0.9375rem;
+  /* 15px */
+  width: 9.4615rem;
+}
+.s8 .card1 {
+  background-color: #ffffff;
 }
 
 .s9 {

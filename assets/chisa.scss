@@ -315,6 +315,7 @@ section {
 // s5:Your work, everywhere you are
 // TO DO>>> bg-imgの追加とh2下の青線
 .s5 {
+    position: relative;
 
     // background-image: url(../img/s5_bgimg.png);
     .contents {
@@ -329,9 +330,14 @@ section {
             /* 30px */
             margin-top: 1.5rem;
             /* 24px */
-            width: 71.8%;
+            width: 97%;
+            /* サイズ通りなら71.8% */
             margin: 1.5rem auto 0;
         }
+    }
+
+    img {
+        position: absolute;
     }
 }
 
@@ -356,7 +362,8 @@ section {
 
             }
         }
-        #s6-img{
+
+        #s6-img {
             width: 46%;
             height: auto;
             object-fit: contain;
@@ -443,7 +450,94 @@ section {
     }
 
     // ここにカード*3のスタイルかく
+    // カード全体（3枚の共通事項）
+    .card {
+        width: 29.479rem;
+        /* 471.67px */
+        height: 31.153rem;
+        /* 498.46px */
+        background-color: #ffffff;
+        /* 後で各々変更 */
+        border: solid 1px red;
+        /* 完成後コメントアウト */
+    }
+    .card-box {
+        display: flex;
+        .card {
+            background-color: $text-w;
+            padding: 60px 40px;
 
+            .quote {
+                img {
+                    width: 86px;
+                    height: 61.46px;
+                }
+            }
+
+            p {
+                font-family: $font-fam;
+                font-size: 1.125rem;
+                /* 18px */
+                font-weight: 400;
+                line-height: 1.875rem;
+                /* 30px */
+                margin-top: 2rem;
+                /* 32px */
+                margin-bottom: 2.5rem;
+                /* 40px */
+                text-align: start;
+                width: 24.479rem;
+                /* 391.67px */
+                height: auto;
+            }
+
+            .content {
+                display: flex;
+
+                img {
+                    width: 5.6975rem;
+                    /* 95px */
+                    height: 5.6975rem;
+                    margin-right: 2.625rem;
+                    /* 42px */
+                }
+
+                .avater-info {
+                    width: 9.4615rem;
+                    /* 246px */
+                    height: auto;
+
+                    h4 {
+                        font-family: $font-fam;
+                        font-size: $h4-24;
+                        font-weight: 600;
+                        line-height: 2.25rem;
+                        /* 36px */
+                        color: $text-b;
+
+                    }
+
+                    p {
+                        font-family: $font-fam;
+                        font-size: $f-16;
+                        font-weight: 400;
+                        line-height: 1.25rem;
+                        /* 20px */
+                        margin-top: 0.9375rem;
+                        /* 15px */
+                        // text-align: start;
+                        width: 9.4615rem;
+                    }
+                }
+            }
+        }
+    }
+    // 左側カード（オレンジの女性）
+    .card1{
+        background-color: $text-w;
+    }
+    // 真ん中カード
+    //  右側カード
 }
 
 // s9:Try Whitepace today
