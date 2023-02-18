@@ -258,9 +258,8 @@ header {
     // background-position:50% 50%;
     span{
         &::before{
-            background-image: url(../img/s2_udline.png);
-        // content: url(../img/s2_udline.png);
-        // position: absolute;
+        content: url(../img/s2_udline.png);
+        position: absolute;
         vertical-align: middle;
         top: 0;
     }
