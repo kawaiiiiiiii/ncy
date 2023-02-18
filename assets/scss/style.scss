@@ -253,21 +253,29 @@ header {
 // section2
 .s2 {
     position: relative;
+
     // background-image: url(../img/s5_bgimg.png);
     // background-repeat:no-repeat ;
     // background-position:50% 50%;
-    span{
+    span {
         background-image: url(../../img/s2_udline.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom 10%;
         
-        // &::before{
+
+        // &::before {
+        //     content: '';
+        //     display: inline-block;
+        //     background-image: url(../../img/s2_udline.png);
+        //     background-size: contain;
+        //     // content: url(../../img/s2_udline.png);
+        //     vertical-align: middle;
             
-        // // content: url(../img/s2_udline.png);
-        // // position: absolute;
-        // vertical-align: middle;
-        // top: 0;
+        // }
     }
-    }
-    .bgimg-s2{
+
+    .bgimg-s2 {
         position: absolute;
         top: 11.85%;
         display: block;
@@ -284,117 +292,118 @@ header {
 
 
 
-// section4
-.s4 {
-    margin: 0 auto;
-    text-align: center;
-
-    .plan-h2-p {
-        width: 66.1%;
-        text-align: center;
+    // section4
+    .s4 {
         margin: 0 auto;
-    }
+        text-align: center;
 
-    .plan-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .plan-h2-p {
+            width: 66.1%;
+            text-align: center;
+            margin: 0 auto;
+        }
 
-        .plan-box {
-            width: 31.9%;
-            height: 62%;
-            padding: 40px 2.75rem;
-            text-align: start;
-            border: 1px solid #ffe492;
-            border-radius: 10px;
+        .plan-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-            // margin-top: 63.5px;
-            span {
-                display: block;
-                font-size: 2.25rem; //36px
-                font-weight: 700;
-                line-height: 2.75rem; //44px
-                margin: 25px 0; //spも同様
-
-                p {
-                    font-weight: 500;
-                    line-height: 1.437rem; //23px
-                }
-
-                div {
-                    font-weight: 400;
-                    font-size: 1rem; //16px
-                    line-height: 1.25rem; //20px
-                }
-
-            }
-
-            button {
-                background-color: #ffffff;
+            .plan-box {
+                width: 31.9%;
+                height: 62%;
+                padding: 40px 2.75rem;
+                text-align: start;
                 border: 1px solid #ffe492;
-                color: #212529;
-                margin: 25px 0 40px;
+                border-radius: 10px;
 
-            }
+                // margin-top: 63.5px;
+                span {
+                    display: block;
+                    font-size: 2.25rem; //36px
+                    font-weight: 700;
+                    line-height: 2.75rem; //44px
+                    margin: 25px 0; //spも同様
 
-            &.center {
-                padding: 0 2.75rem;
-                height: 100%;
-                margin-top: 0;
+                    p {
+                        font-weight: 500;
+                        line-height: 1.437rem; //23px
+                    }
 
-                h4 {
-                    margin-top: 80px;
-                }
+                    div {
+                        font-weight: 400;
+                        font-size: 1rem; //16px
+                        line-height: 1.25rem; //20px
+                    }
 
-                h4,
-                div,
-                p {
-                    color: #ffffff;
-                }
-
-                span,
-                img {
-                    color: #ffe492;
                 }
 
                 button {
-                    background-color: $btn;
-                    border: $btn solid 1px;
-                    color: #ffffff;
-                    margin-bottom: 80px
+                    background-color: #ffffff;
+                    border: 1px solid #ffe492;
+                    color: #212529;
+                    margin: 25px 0 40px;
+
                 }
 
-                background-color: $bgc;
-                border-radius: 10px;
+                &.center {
+                    padding: 0 2.75rem;
+                    height: 100%;
+                    margin-top: 0;
+
+                    h4 {
+                        margin-top: 80px;
+                    }
+
+                    h4,
+                    div,
+                    p {
+                        color: #ffffff;
+                    }
+
+                    span,
+                    img {
+                        color: #ffe492;
+                    }
+
+                    button {
+                        background-color: $btn;
+                        border: $btn solid 1px;
+                        color: #ffffff;
+                        margin-bottom: 80px
+                    }
+
+                    background-color: $bgc;
+                    border-radius: 10px;
+                }
+
+                .content {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 28px;
+
+                }
+
+                .content-last {
+                    margin-bottom: 0;
+                }
+
+                img {
+                    width: 1.125rem; //18px
+                    margin-right: 1.125rem;
+                }
+
+                p {
+                    margin-bottom: 25px;
+                }
+
+
             }
-
-            .content {
-                display: flex;
-                align-items: center;
-                margin-bottom: 28px;
-
-            }
-
-            .content-last {
-                margin-bottom: 0;
-            }
-
-            img {
-                width: 1.125rem; //18px
-                margin-right: 1.125rem;
-            }
-
-            p {
-                margin-bottom: 25px;
-            }
-
-
         }
+
+
     }
 
-
-}
-
-.atsuko {
-    margin: 0 auto;
+    .atsuko {
+        margin: 0 auto;
+    }
 }
