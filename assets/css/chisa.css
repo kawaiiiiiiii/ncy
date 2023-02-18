@@ -109,21 +109,16 @@ section {
   font-weight: 700;
   line-height: 5.437rem;
 }
-.s8 .card {
+.s8 .card-box {
+  display: flex;
   width: 29.479rem;
   /* 471.67px */
   height: 31.153rem;
   /* 498.46px */
-  background-color: #ffffff;
-  /* 後で各々変更 */
   border: solid 1px red;
   /* 完成後コメントアウト */
 }
-.s8 .card-box {
-  display: flex;
-}
 .s8 .card-box .card {
-  background-color: #ffffff;
   padding: 60px 40px;
 }
 .s8 .card-box .card .quote img {
@@ -167,7 +162,6 @@ section {
   font-weight: 600;
   line-height: 2.25rem;
   /* 36px */
-  color: #212529;
 }
 .s8 .card-box .card .content .avater-info p {
   font-family: "inter";
@@ -181,6 +175,15 @@ section {
 }
 .s8 .card1 {
   background-color: #ffffff;
+}
+.s8 .card2, .s8 .card3 {
+  background-color: #4F9CF9;
+}
+.s8 .card2 h4, .s8 .card3 h4 {
+  color: #043873;
+}
+.s8 .card2 p, .s8 .card3 p {
+  color: #ffffff;
 }
 
 .s9 {

@@ -451,20 +451,16 @@ section {
 
     // ここにカード*3のスタイルかく
     // カード全体（3枚の共通事項）
-    .card {
+    .card-box {
+        display: flex;
         width: 29.479rem;
         /* 471.67px */
         height: 31.153rem;
         /* 498.46px */
-        background-color: #ffffff;
-        /* 後で各々変更 */
         border: solid 1px red;
         /* 完成後コメントアウト */
-    }
-    .card-box {
-        display: flex;
+
         .card {
-            background-color: $text-w;
             padding: 60px 40px;
 
             .quote {
@@ -513,7 +509,7 @@ section {
                         font-weight: 600;
                         line-height: 2.25rem;
                         /* 36px */
-                        color: $text-b;
+                        // color: $text-b;
 
                     }
 
@@ -532,11 +528,23 @@ section {
             }
         }
     }
+
     // 左側カード（オレンジの女性）
-    .card1{
+    .card1 {
         background-color: $text-w;
     }
+
     // 真ん中カード
+    .card2, .card3 {
+        background-color: $btn;
+        h4{
+            color: $bgc;
+        }
+        p{
+            color: $text-w;
+        }
+    }
+
     //  右側カード
 }
 
