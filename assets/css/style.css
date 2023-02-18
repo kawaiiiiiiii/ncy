@@ -140,6 +140,16 @@ header .section-wrap .yellow-btn {
   margin-top: 1.5rem;
 }
 
+.s1 {
+  position: relative;
+  z-index: 2;
+}
+.s1 .bgimg-s1 {
+  position: absolute;
+  width: auto;
+  height: 80%;
+  z-index: 1;
+}
 .s1 .container-box {
   width: 32.875rem;
 }
@@ -217,4 +227,8 @@ header .section-wrap .yellow-btn {
 .s4 .plan-container .plan-box img {
   width: 1.125rem;
   margin-right: 1.125rem;
+}
+
+.atsuko {
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
