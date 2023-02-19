@@ -187,6 +187,7 @@ main button {
 .s1 .img-box img {
   display: block;
   height: 100%;
+  width: 100%;
 }
 
 .s2 {
@@ -200,17 +201,22 @@ main button {
 }
 .s2 .container {
   justify-content: space-between;
-  align-items: center;
+  height: 41.8%;
 }
 .s2 .container.reverse {
   height: 661px;
-  margin-top: 15.2%;
+  margin-top: 7.6%;
 }
 .s2 .container.reverse .img-box {
-  height: 661px;
+  height: 100%;
 }
 .s2 .container.reverse .img-box img {
-  height: 100%;
+  width: 100%;
+  height: auto;
+}
+.s2 .container.reverse .container-box {
+  height: 13%;
+  margin-top: 14%;
 }
 .s2 .container.reverse h2 {
   display: flex;
@@ -223,11 +229,16 @@ main button {
 }
 .s2 .container-box {
   width: 47%;
+  margin: 0;
   margin-top: 68px;
 }
 .s2 .img-box {
   width: 50.5%;
-  height: auto;
+  height: 100%;
+}
+.s2 .img-box img {
+  width: auto;
+  height: 100%;
 }
 .s2 span {
   display: block;
