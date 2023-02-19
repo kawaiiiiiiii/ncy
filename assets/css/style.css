@@ -31,16 +31,14 @@ section {
 
 button {
   margin-top: 3.75rem;
+  margin-left: 0;
   padding: 1.333rem 2.5rem;
   background-color: #4F9CF9;
   border-radius: 0.375rem;
   color: #ffffff;
   height: 3.75rem;
-  margin: 1rem auto;
   display: flex;
   align-items: center;
-  margin-left: 0;
-  position: absolute;
 }
 button:hover {
   opacity: 0.7;
@@ -66,12 +64,6 @@ p {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.875rem;
-}
-
-img {
-  display: block;
-  width: 50%;
-  height: 50%;
 }
 
 .vector {
@@ -111,8 +103,9 @@ header .section-wrap .header-rigth ul li a {
   text-align: center;
 }
 header .section-wrap .header-rigth ul li a img {
-  width: auto;
-  height: 1.5rem;
+  width: 29px;
+  height: 24px;
+  padding: 5px;
   margin-left: 0.625rem;
 }
 header .section-wrap button {
@@ -120,11 +113,15 @@ header .section-wrap button {
   display: flex;
   align-items: center;
   margin-left: 1.5rem;
+  border-radius: 8px;
+  padding: 16px 24px;
 }
 header .section-wrap .yellow-btn {
   margin-left: 3.75rem;
   background-color: #ffe492;
   color: #212529;
+  border-radius: 8px;
+  padding: 16px 40px;
 }
 
 .container {
@@ -141,8 +138,19 @@ header .section-wrap .yellow-btn {
   margin-top: 1.5rem;
 }
 
+main button {
+  position: absolute;
+}
+
 .s1 {
-  position: relative;
+  height: 61.5rem;
+  background-image: url(../../img/bgimg-element.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 228px;
+}
+.s1 .section-wrap {
+  margin: 8.75rem auto;
 }
 .s1 .bgimg-s1 {
   position: absolute;
@@ -150,16 +158,28 @@ header .section-wrap .yellow-btn {
   height: 65.9%;
   margin-top: 228.22px;
 }
+.s1 .container {
+  align-items: center;
+}
 .s1 .container-box {
-  width: 32.875rem;
+  height: 54.2%;
+  margin: 0 auto;
 }
 .s1 .container-box h2 {
   width: 32.875rem;
   font-size: 4rem;
 }
-.s1 .s1-img {
-  width: 59.625rem;
-  height: auto;
+.s1 .container-box button {
+  margin-bottom: 0;
+}
+.s1 .img-box {
+  width: auto;
+  height: 60.9%;
+  margin-top: 104px;
+}
+.s1 .img-box img {
+  display: block;
+  height: 100%;
 }
 
 .s2 {

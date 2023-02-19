@@ -71,17 +71,17 @@ section {
 }
 
 button {
+    // margin: 1rem auto;
     margin-top: $btm-mtop;
+    margin-left: 0;
     padding: 1.333rem 2.5rem;
     background-color: $btn;
     border-radius: 0.375rem;
     color: #ffffff;
     height: 3.75rem;
-    margin: 1rem auto;
     display: flex;
     align-items: center;
-    margin-left: 0;
-    position: absolute;
+    // position: absolute;
 
 
     &:hover {
@@ -113,11 +113,11 @@ p {
     line-height: $p-lineh;
 }
 
-img {
-    display: block;
-    width: 50%;
-    height: 50%;
-}
+// img {
+//     display: block;
+//     width: 50%;
+//     height: 50%;
+// }
 
 .vector {
     width: 0.625rem;
@@ -152,6 +152,7 @@ header {
                 height: 5.75rem;
                 display: flex;
                 align-items: center;
+                
 
                 li {
                     margin-left: 2rem;
@@ -162,8 +163,9 @@ header {
                         text-align: center;
 
                         img {
-                            width: auto;
-                            height: 1.5rem;
+                            width: 29px;
+                            height: 24px;
+                            padding: 5px;
                             margin-left: 0.625rem;
                         }
                     }
@@ -178,17 +180,20 @@ header {
             display: flex;
             align-items: center;
             margin-left: 1.5rem;
+            border-radius: 8px;
+            padding: 16px 24px;
         }
 
         .yellow-btn {
             margin-left: 3.75rem;
             background-color: #ffe492;
             color: $text-b;
+            border-radius: 8px;
+            padding: 16px 40px;
             // font-family: sans-serif;
         }
     }
 }
-
 
 // container　(フレックスボックス)
 
@@ -209,12 +214,23 @@ header {
         margin-top: $p-mtop;
     }
 }
-
+// mainボタン
+main{
+    button{
+        position: absolute;
+    }
+}
 // section1
 .s1 {
-    position: relative;
-
-
+    // position: relative;
+    height: 61.5rem;// 984px
+    background-image: url(../../img/bgimg-element.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position:0 228px ;
+    .section-wrap{
+        margin:$s-mtb ;
+    }
     .bgimg-s1 {
         position: absolute;
         width: 100%;
@@ -222,20 +238,34 @@ header {
         margin-top: 228.22px;
         // z-index: 1;
     }
+    .container{
+        align-items: center;
+    }
 
     .container-box {
-        width: 32.875rem;
+        height: 54.2%;
+        margin: 0 auto;
+        
 
         // width: 100%;
         h2 {
             width: 32.875rem;
             font-size: $h2-64;
         }
+        button{
+            margin-bottom: 0;
+        }
     }
 
-    .s1-img {
-        width: 59.625rem;
-        height: auto;
+    .img-box{
+        width: auto;
+        height: 60.9%;
+        margin-top: 104px;
+        img{
+            
+            display: block;
+            height: 100%;
+        }
     }
 
     // &::after{
