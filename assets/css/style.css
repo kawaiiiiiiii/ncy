@@ -66,6 +66,12 @@ p {
   line-height: 1.875rem;
 }
 
+img {
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
 .vector {
   width: 0.625rem;
   height: 0.625rem;
@@ -163,17 +169,18 @@ main button {
 }
 .s1 .container-box {
   height: 54.2%;
+  width: 35.5%;
   margin: 0 auto;
 }
 .s1 .container-box h2 {
-  width: 32.875rem;
+  width: 100%;
   font-size: 4rem;
 }
 .s1 .container-box button {
   margin-bottom: 0;
 }
 .s1 .img-box {
-  width: auto;
+  width: 64.4%;
   height: 60.9%;
   margin-top: 104px;
 }
@@ -183,18 +190,36 @@ main button {
 }
 
 .s2 {
-  position: relative;
-  z-index: 1;
   background-image: url(../../img/s2_bgimg.png);
   background-size: 602.84px 448.52px;
   background-repeat: no-repeat;
   background-position: 0 185px;
 }
 .s2 .section-wrap {
-  height: 547px;
+  height: 1308px;
 }
 .s2 .container {
   justify-content: space-between;
+  align-items: center;
+}
+.s2 .container.reverse {
+  height: 661px;
+  margin-top: 15.2%;
+}
+.s2 .container.reverse .img-box {
+  height: 661px;
+}
+.s2 .container.reverse .img-box img {
+  height: 100%;
+}
+.s2 .container.reverse h2 {
+  display: flex;
+}
+.s2 .container.reverse .s2-udline-2 {
+  background-image: url(../../img/s2_udline2.png);
+  background-repeat: no-repeat;
+  background-size: 44.5%;
+  background-position: bottom right 44%;
 }
 .s2 .container-box {
   width: 47%;
@@ -211,13 +236,6 @@ main button {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
-}
-.s2 .bgimg-s2 {
-  position: absolute;
-  top: 11.85%;
-  display: block;
-  width: 602.84px;
-  height: 448.52px;
 }
 
 .section-wrap {

@@ -113,11 +113,11 @@ p {
     line-height: $p-lineh;
 }
 
-// img {
-//     display: block;
-//     width: 50%;
-//     height: 50%;
-// }
+img {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
 
 .vector {
     width: 0.625rem;
@@ -244,12 +244,13 @@ main{
 
     .container-box {
         height: 54.2%;
+        width: 35.5%;
         margin: 0 auto;
         
 
         // width: 100%;
         h2 {
-            width: 32.875rem;
+            width:100% ;//32.875rem
             font-size: $h2-64;
         }
         button{
@@ -258,7 +259,7 @@ main{
     }
 
     .img-box{
-        width: auto;
+        width: 64.4%;
         height: 60.9%;
         margin-top: 104px;
         img{
@@ -282,8 +283,8 @@ main{
 
 // section2
 .s2 {
-    position: relative;
-    z-index: 1;
+    // position: relative;
+    // z-index: 1;
 
     background-image: url(../../img/s2_bgimg.png);
     background-size: 602.84px 448.52px;
@@ -291,10 +292,37 @@ main{
     background-position: 0 185px;
 
     .section-wrap{
-        height: 547px;
+        height: 1308px;//547+100+661
     }
     .container{
         justify-content: space-between;
+        align-items: center;
+        
+        &.reverse{
+            height: 661px;
+            margin-top: 15.2%;
+            // .container-box{
+            //     // height: 100%;
+                
+            // }
+            .img-box{
+                height: 661px;
+                img{
+                    height: 100%;
+                }
+            }
+            h2{
+                display:flex ;
+            }
+            .s2-udline-2{
+                // width: 100%;
+                background-image: url(../../img/s2_udline2.png);
+                background-repeat: no-repeat;
+                background-size: 44.5%;
+                background-position: bottom right 44%;
+            }
+            
+        }
     }
     .container-box{
         width: 47%;
@@ -334,16 +362,16 @@ main{
         // }
     }
 
-    .bgimg-s2 {
-        position: absolute;
-        top: 11.85%;
-        display: block;
-        width: 602.84px;
-        height: 448.52px;
-        // object-fit: cover;
+    // .bgimg-s2 {
+    //     // position: absolute;
+    //     // top: 11.85%;
+    //     // display: block;
+    //     // width: 602.84px;
+    //     // height: 448.52px;
+    //     // object-fit: cover;
 
 
-    }
+    // }
 }
 
 .section-wrap {
