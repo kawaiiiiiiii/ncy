@@ -36,6 +36,7 @@ section {
 }
 .s5 img {
   position: absolute;
+  top: 0%;
 }
 
 .s6 .container {
@@ -229,7 +230,7 @@ section {
   display: flex;
   justify-content: space-around;
 }
-.footer-upper .contents img {
+.footer-upper .contents #fu-logo {
   width: 11.937rem;
   /* 191px */
   height: auto;
@@ -266,6 +267,9 @@ section {
   line-height: 2.25rem;
   /* 36px */
   color: #ffffff;
+}
+.footer-upper .contents .vector {
+  display: block;
 }
 
 .footer-bottom {
