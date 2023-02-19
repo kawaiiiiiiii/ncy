@@ -185,20 +185,32 @@ main button {
 .s2 {
   position: relative;
   z-index: 1;
-}
-.s2 span::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  background-image: url(../../img/s2_udline.png);
-  background-size: contain;
+  background-image: url(../../img/s2_bgimg.png);
+  background-size: 602.84px 448.52px;
   background-repeat: no-repeat;
-  width: 50%;
-  height: 50%;
-  left: 12%;
-  top: 23%;
-  z-index: 0;
-  vertical-align: middle;
+  background-position: 0 185px;
+}
+.s2 .section-wrap {
+  height: 547px;
+}
+.s2 .container {
+  justify-content: space-between;
+}
+.s2 .container-box {
+  width: 47%;
+  margin-top: 68px;
+}
+.s2 .img-box {
+  width: 50.5%;
+  height: auto;
+}
+.s2 span {
+  display: block;
+  width: 71.5%;
+  background-image: url(../../img/s2_udline.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
 }
 .s2 .bgimg-s2 {
   position: absolute;

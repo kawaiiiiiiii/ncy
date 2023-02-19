@@ -285,33 +285,53 @@ main{
     position: relative;
     z-index: 1;
 
-    // background-image: url(../img/s5_bgimg.png);
-    // background-repeat:no-repeat ;
-    // background-position:50% 50%;
+    background-image: url(../../img/s2_bgimg.png);
+    background-size: 602.84px 448.52px;
+    background-repeat:no-repeat ;
+    background-position: 0 185px;
+
+    .section-wrap{
+        height: 547px;
+    }
+    .container{
+        justify-content: space-between;
+    }
+    .container-box{
+        width: 47%;
+        margin-top: 68px;
+        
+    }
+
+    .img-box{
+        width: 50.5%;
+        height: auto;
+    }
     span {
-        // background-image: url(../../img/s2_udline.png);
-        // background-repeat: no-repeat;
-        // background-size: 100%;
-        // background-position: bottom 10%;
+        display: block;
+        width: 71.5%;
+        background-image: url(../../img/s2_udline.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
 
 
-        &::after {
-            position: absolute;
-            content: '';
-            display: inline-block;
-            background-image: url(../../img/s2_udline.png);
-            background-size: contain; //背景画像全体が見える
-            background-repeat: no-repeat;
-            width: 50%;
-            height: 50%;
-            left: 12%;
-            top: 23%;
-            z-index: 0;
+        // &::after {
+        //     position: absolute;
+        //     content: '';
+        //     display: inline-block;
+        //     background-image: url(../../img/s2_udline.png);
+        //     background-size: contain; //背景画像全体が見える
+        //     background-repeat: no-repeat;
+        //     width: 50%;
+        //     height: 50%;
+        //     left: 12%;
+        //     top: 23%;
+        //     z-index: 0;
 
-            // content: url(../../img/s2_udline.png);
-            vertical-align: middle;
+        //     // content: url(../../img/s2_udline.png);
+        //     vertical-align: middle;
 
-        }
+        // }
     }
 
     .bgimg-s2 {
