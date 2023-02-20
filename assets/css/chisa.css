@@ -21,6 +21,12 @@ section {
 .s5 .contents {
   text-align: center;
 }
+.s5 .contents h2 {
+  background-image: url(../../img/s5_udline.png);
+  background-repeat: no-repeat;
+  background-size: 21%;
+  background-position: bottom right 15%;
+}
 .s5 .contents p {
   font-family: "inter";
   font-size: 1.125rem;
@@ -36,12 +42,17 @@ section {
 }
 .s5 img {
   position: absolute;
-  top: 0%;
 }
 
 .s6 .container {
   margin-bottom: 8.75rem;
   /* 140px */
+}
+.s6 .container .container-box h2 {
+  background-image: url(../../img/s6_udline.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom right 50%;
 }
 .s6 .container .container-box p {
   font-family: "inter";
@@ -59,6 +70,12 @@ section {
   text-align: center;
   margin-top: 8.75rem;
   /* 140px */
+}
+.s6 .contents h2 {
+  background-image: url(../../img/s6_udline2.png);
+  background-repeat: no-repeat;
+  background-size: 23%;
+  background-position: bottom left 58%;
 }
 .s6 .contents .sponsors-icon {
   margin-top: 10rem;
@@ -109,6 +126,10 @@ section {
   font-size: 4.375rem;
   font-weight: 700;
   line-height: 5.437rem;
+  background-image: url(../../img/s8_udline.png);
+  background-repeat: no-repeat;
+  background-size: 18%;
+  background-position: bottom right 23%;
 }
 .s8 .card-box {
   display: flex;
@@ -230,7 +251,7 @@ section {
   display: flex;
   justify-content: space-around;
 }
-.footer-upper .contents #fu-logo {
+.footer-upper .contents img {
   width: 11.937rem;
   /* 191px */
   height: auto;
@@ -267,9 +288,6 @@ section {
   line-height: 2.25rem;
   /* 36px */
   color: #ffffff;
-}
-.footer-upper .contents .vector {
-  display: block;
 }
 
 .footer-bottom {
