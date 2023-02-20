@@ -9,7 +9,7 @@ $text-b : #212529;
 $btn : #4F9CF9;
 // コンテンツ幅
 $pc-width : 77%;
-$sp-width : 100%;
+$sp-width : 768px;
 // font 16でわるとrem
 $font-fam :"inter";
 $h2-72 : 4.5rem;
@@ -28,17 +28,24 @@ $p-fontw : 400;
 
 $h2-lineh : 5.437rem; //h2 line-height about87px
 $h4-lineh : 2.25rem; //h4 36px
-$p-lineh : 1.875rem; //
+$p-lineh : 1.875rem; //30px
 
 // 余白
 $s-mtb : 8.75rem auto; //h2のマージントップ
 $btm-mtop : 3.75rem; //フレックスボックス内のボタンマージンTOP
 $p-mtop : 1.5rem; //フレックスボックス内のｐタグマージンTOP
 
+// レスポンシブｓｐ
+@mixin sp {
+    @media screen and (max-width:$sp-width) {
+        @content;
+    }
+}
+
 
 
 * {
-    border: 1px solid gray;
+    // border: 1px solid gray;
     box-sizing: border-box;
     letter-spacing: -0.02em; //文字間のスペース
     font-family: 'Inter', sans-serif;
@@ -47,7 +54,9 @@ $p-mtop : 1.5rem; //フレックスボックス内のｐタグマージンTOP
 
 body {
     max-width: 1920px;
+    min-width: 768px;
     font-family: 'Inter', sans-serif;
+
 }
 
 section {
@@ -57,6 +66,13 @@ section {
 .section-wrap {
     margin: $s-mtb;
     width: $pc-width;
+
+    @include sp {
+        width: 100%;
+        margin: 0 16px;
+        padding: 0 5%;
+    }
+
 }
 
 .bgc-navy {
@@ -99,6 +115,12 @@ h2 {
     font-size: $h2-72;
     font-weight: $h2-fontw;
     line-height: 5.4rem;
+
+    @include sp {
+        line-height: 43.57px;
+        font-size: 36px;
+        text-align: center;
+    }
 }
 
 h4 {
@@ -111,6 +133,10 @@ p {
     font-size: $p-18;
     font-weight: $p-fontw;
     line-height: $p-lineh;
+
+    @include sp {
+        text-align: center;
+    }
 }
 
 img {
@@ -126,12 +152,27 @@ img {
 
 // ヘッター部分
 header {
+    .ham {
+        display: none;
+
+        @include sp {
+            display: block;
+            width: 42px;
+            height: 24px;
+        }
+    }
+
     .section-wrap {
         height: 5.75rem;
         display: flex;
         margin: 0 auto;
         align-items: center;
         justify-content: space-between;
+
+        @include sp {
+            height: 56px;
+            padding: 5%;
+        }
 
         .header-left {
             width: 11.937rem;
@@ -141,11 +182,17 @@ header {
                 width: 100%;
                 height: auto;
 
+
             }
         }
 
         .header-rigth {
             display: flex;
+
+            @include sp {
+                display: none;
+
+            }
 
 
             ul {
@@ -193,16 +240,28 @@ header {
             // font-family: sans-serif;
         }
     }
+
 }
 
 // container　(フレックスボックス)
 
 .container {
     display: flex;
+
+    @include sp {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
     // justify-content: space-between;
 
     &.reverse {
         flex-direction: row-reverse;
+
+        @include sp {
+            flex-direction: column;
+        }
     }
 
     p,
@@ -216,11 +275,13 @@ header {
 }
 
 // mainボタン
-main {
-    button {
-        position: absolute;
-    }
-}
+// main {
+//     button {
+//         position: absolute;
+
+
+//     }
+// }
 
 // section1
 .s1 {
@@ -231,8 +292,14 @@ main {
     background-repeat: no-repeat;
     background-position: 0 228px;
 
+
     .section-wrap {
-        margin: $s-mtb ;
+        @include sp {
+            height: auto;
+        }
+
+        margin-top: 0;
+        padding-top:140px;
     }
 
     .bgimg-s1 {
@@ -252,15 +319,29 @@ main {
         width: 35.5%;
         margin: 0 auto;
 
+        @include sp {
+
+            width: 100%;
+        }
+
 
         // width: 100%;
         h2 {
             width: 100%; //32.875rem
             font-size: $h2-64;
+
+            @include sp {
+                font-size: 36px;
+                height: 88px;
+                text-align: center;
+                line-height: 43.57px;
+            }
         }
 
         button {
             margin-bottom: 0;
+
+            @include sp {}
         }
     }
 
@@ -269,11 +350,19 @@ main {
         height: 60.9%;
         margin-top: 104px;
 
+        @include sp {
+            width: 100%;
+        }
+
         img {
 
             display: block;
             height: 100%;
             width: 100%;
+
+            @include sp {
+                margin: 100px auto;
+            }
         }
     }
 
@@ -301,6 +390,10 @@ main {
 
     .section-wrap {
         height: 1308px; //547+100+661
+
+        @include sp {
+            height: auto;
+        }
     }
 
     .container {
@@ -311,12 +404,14 @@ main {
         &.reverse {
             height: 661px;
             margin-top: 7.6%;
-            // .container-box{
-            //     // height: 100%;
 
-            // }
+            @include sp {
+                height: auto;
+            }
+
             .img-box {
                 height: 100%;
+                margin: 60px auto 80px;
 
                 img {
                     width: 100%;
@@ -333,6 +428,12 @@ main {
             h2 {
                 display: flex;
 
+                @include sp {
+                    align-items: center;
+                    justify-content: center;
+
+                }
+
             }
 
             .s2-udline-2 {
@@ -341,6 +442,12 @@ main {
                 background-repeat: no-repeat;
                 background-size: 44.5%;
                 background-position: bottom right 44%;
+
+                @include sp {
+                    background-position: bottom right 18%;
+                    background-size: 50%;
+
+                }
             }
 
         }
@@ -391,6 +498,12 @@ main {
         // }
     }
 
+    button {
+        @include sp {
+            position: relative;
+        }
+    }
+
 
 }
 
@@ -402,6 +515,17 @@ main {
 .s3 {
     height: 759px;
 
+    @include sp {
+        height: auto;
+    }
+
+    button {
+        @include sp {
+            position: relative;
+        }
+
+    }
+
     .section-wrap {
         height: 63.1%;
     }
@@ -409,7 +533,7 @@ main {
     .container {
         justify-content: space-between;
         height: 100%;
-        
+
     }
 
     .container-box {
@@ -427,6 +551,10 @@ main {
         border: 1px solid #a7cefc;
         background-color: #a7cefc;
         margin-bottom: 140px;
+
+        @include sp {
+            margin: 60px auto 80px;
+        }
 
         img {
             width: auto;
@@ -449,7 +577,13 @@ main {
 .s4 {
     margin: 0 auto;
     text-align: center;
-    .section-wrap{
+
+    @include sp {
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .section-wrap {
         margin-top: 0;
     }
 
@@ -462,7 +596,7 @@ main {
             height: 50.4%;
             width: 38.9%;
             text-align: start;
-            
+
             .s4-udline {
                 display: block;
                 width: 100%;
@@ -470,13 +604,18 @@ main {
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-position: bottom;
+    
             }
         }
 
         .img-box {
             width: 54.4%;
-            height:65.6%;
-
+            height: 65.6%;
+            @include sp{
+                height: 214px;
+                width: 288px;
+                
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -484,26 +623,49 @@ main {
         }
     }
 
+    // section4の下　プランのところ
+    .plan-rwap {
+        height: 1272px;
+        @include sp{
+             height: auto;   
+        }
+    }
+.sp{
+    @include sp{
+         display: none;       
+    }
+}
+    #s4 {
+        margin-top: 10%;
+    }
+
     .plan-h2-p {
-        width: 66.1%;
+        width: 68%;
+        ; //66.1%
         text-align: center;
-        margin: 0 auto;
+        margin: 1.8% auto 4.7%;
     }
 
     .plan-container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        height: 761px;
 
+        @include sp{
+                height: auto;
+                
+        }
         .plan-box {
             width: 31.9%;
-            height: 62%;
-            padding: 40px 2.75rem;
+            height: 664px;
+            padding: 40px 44px;
             text-align: start;
             border: 1px solid #ffe492;
             border-radius: 10px;
-
-            // margin-top: 63.5px;
+            margin-top: 63.5px;
+            @include sp{
+                height: auto;
+            }
             span {
                 display: block;
                 font-size: 2.25rem; //36px
@@ -529,6 +691,7 @@ main {
                 border: 1px solid #ffe492;
                 color: #212529;
                 margin: 25px 0 40px;
+                height: 51px;
 
             }
 
@@ -536,7 +699,9 @@ main {
                 padding: 0 2.75rem;
                 height: 100%;
                 margin-top: 0;
-
+                @include sp{
+                width: 100%;
+                }
                 h4 {
                     margin-top: 80px;
                 }
@@ -545,18 +710,24 @@ main {
                 div,
                 p {
                     color: #ffffff;
+                    @include sp{
+                text-align: start;
+                    }
                 }
 
                 span,
                 img {
                     color: #ffe492;
+                    @include sp{
+                color: #ffffff;
+                    }
                 }
 
                 button {
                     background-color: $btn;
                     border: $btn solid 1px;
                     color: #ffffff;
-                    margin-bottom: 80px
+                    margin-bottom: 80px;
                 }
 
                 background-color: $bgc;
@@ -572,6 +743,9 @@ main {
 
             .content-last {
                 margin-bottom: 0;
+                @include sp{
+                margin-bottom: 100px;
+                }
             }
 
             img {
