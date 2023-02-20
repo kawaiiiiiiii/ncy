@@ -275,6 +275,12 @@ main button {
   width: auto;
   height: 100%;
 }
+.s3 .s3-udline {
+  background-image: url(../../img/s2_udline2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom right 44%;
+}
 
 .s4 {
   margin: 0 auto;
