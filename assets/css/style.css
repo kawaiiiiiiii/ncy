@@ -15,7 +15,8 @@ section {
 }
 
 .section-wrap {
-  margin: 8.75rem auto;
+  margin: 0 auto;
+  padding: 140px 0;
   width: 77%;
 }
 @media screen and (max-width: 768px) {
@@ -362,6 +363,7 @@ main {
 
 .s3 {
   height: 759px;
+  padding-top: 20px;
 }
 @media screen and (max-width: 768px) {
   .s3 {

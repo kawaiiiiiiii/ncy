@@ -56,6 +56,10 @@ body {
     max-width: 1920px;
     min-width: 768px;
     font-family: 'Inter', sans-serif;
+    // font-size:1rem ;
+    // @include sp {
+    //     font-size: 0.5rem;
+    // }
 
 }
 
@@ -64,7 +68,8 @@ section {
 }
 
 .section-wrap {
-    margin: $s-mtb;
+    margin: 0 auto;
+    padding: 140px 0;
     width: $pc-width;
 
     @include sp {
@@ -514,6 +519,7 @@ main {
 // section3
 .s3 {
     height: 759px;
+    padding-top: 20px;
 
     @include sp {
         height: auto;

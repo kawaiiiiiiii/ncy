@@ -1,6 +1,5 @@
 @charset "UTF-8";
 * {
-  border: 1px solid gray;
   box-sizing: border-box;
   letter-spacing: -0.02em;
   font-family: "Inter", sans-serif;
@@ -15,6 +14,9 @@ section {
   width: 100%;
 }
 
+.s5 {
+  padding: 50px 0 50px;
+}
 .s5 .contents {
   text-align: center;
 }
@@ -101,6 +103,9 @@ section {
   height: auto;
 }
 
+.s7 {
+  padding: 50px 0 50px;
+}
 .s7 .s7-img {
   display: block;
 }
@@ -130,15 +135,16 @@ section {
 }
 .s8 .card-box {
   display: flex;
-  width: 29.479rem;
+  justify-content: space-between;
+  width: 471.67px;
   /* 471.67px */
   height: 31.153rem;
   /* 498.46px */
-  border: solid 1px red;
   /* 完成後コメントアウト */
 }
 .s8 .card-box .card {
   padding: 60px 40px;
+  border-radius: 10px;
 }
 .s8 .card-box .card .quote img {
   width: 86px;
@@ -210,6 +216,7 @@ section {
 
 .s9 {
   text-align: center;
+  padding: 50px 0 50px;
 }
 .s9 .section-wrap p {
   font-family: "inter";
@@ -253,6 +260,7 @@ section {
 .footer-upper {
   display: flex;
   justify-content: space-between;
+  padding-top: 50px;
 }
 .footer-upper .contents img {
   width: 11.937rem;
@@ -300,6 +308,10 @@ section {
 .footer-bottom {
   display: flex;
   justify-content: space-between;
+}
+.footer-bottom .fb-right {
+  display: flex;
+  justify-content: space-around;
 }
 .footer-bottom .fb-left {
   display: flex;

@@ -38,7 +38,7 @@ $p-mtop : 1.5rem; //フレックスボックス内のｐタグマージンTOP
 
 
 * {
-    border: 1px solid gray;
+    // border: 1px solid gray;
     box-sizing: border-box;
     letter-spacing: -0.02em; //文字間のスペース
     font-family: 'Inter', sans-serif;
@@ -315,6 +315,7 @@ section {
 // s5:Your work, everywhere you are
 // TO DO>>> bg-imgの追加とh2下の青線
 .s5 {
+    padding: 50px 0 50px;
     // position: relative;
     // background-image: url(../../img/s5_bgimg.png);
     // background-repeat: no-repeat;
@@ -439,6 +440,7 @@ section {
 // TO DO>>> bg-imgの追加とh2下の青線
 .s7 {
 
+    padding: 50px 0 50px;
     // background-image: url(../img/s7_bgimg.png);
     // background-position: center;
     // background-size: cover;
@@ -481,16 +483,19 @@ section {
     // カード全体（3枚の共通事項）
     .card-box {
         display: flex;
-        width: 29.479rem;
+        justify-content: space-between;
+        width: 471.67px;
         /* 471.67px */
         height: 31.153rem;
         /* 498.46px */
-        border: solid 1px red;
+        // border: solid 1px red;
+        
         /* 完成後コメントアウト */
 
         .card {
             padding: 60px 40px;
-
+            border-radius: 10px;
+            // width: 471.67px;
             .quote {
                 img {
                     width: 86px;
@@ -582,7 +587,7 @@ section {
 // s9:Try Whitepace today
 .s9 {
     text-align: center;
-
+    padding: 50px 0 50px;
     .section-wrap {
 
         p {
@@ -637,7 +642,7 @@ section {
 .footer-upper {
     display: flex;
     justify-content: space-between;
-
+    padding-top: 50px;
     // whitepace
     .contents {
         img {
@@ -704,6 +709,11 @@ section {
     // margin-top: 100px;
     display: flex;
     justify-content: space-between;
+
+    .fb-right{
+        display: flex;
+        justify-content: space-around;
+    }
 
     .fb-left {
         display: flex;
