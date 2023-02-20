@@ -249,8 +249,31 @@ main button {
   background-position: bottom;
 }
 
-.section-wrap {
-  margin-top: 4.25rem;
+.s3 {
+  height: 759px;
+}
+.s3 .section-wrap {
+  height: 63.1%;
+}
+.s3 .container {
+  justify-content: space-between;
+  height: 100%;
+}
+.s3 .container-box {
+  width: 48%;
+}
+.s3 h2 {
+  margin-top: 13.2%;
+}
+.s3 .img-box {
+  width: 46.3%;
+  height: 100%;
+  border: 1px solid #a7cefc;
+  background-color: #a7cefc;
+}
+.s3 .img-box img {
+  width: auto;
+  height: 100%;
 }
 
 .s4 {
